@@ -1,8 +1,9 @@
-##AWS  S3 Latency Check Project
+AWS  S3 Latency Check Program
+=============================
 
 Check S3 Latency for each region when putting, getting and deleting files. It'll test 10 times for each file and calculate the average latency for each region and file. <br>
 
-####File Size & Region List 
+## File Size & Region List 
 ```
 file_list = ['1K', '10K', '1M', '10M']
 region_list :  {'US East(Ohio)':'us-east-2','US East(N.Virginia)':'us-east-1', 'US West(N.California)':'us-west-1', 'US West(Oregon)':'us-west-2',
@@ -11,7 +12,7 @@ region_list :  {'US East(Ohio)':'us-east-2','US East(N.Virginia)':'us-east-1', '
               'EU (London)':'eu-west-2', 'EU (Paris)':'eu-west-3', 'EU (Stockholm)':'eu-north-1', 'South America (São Paulo)':'sa-east-1'}
 ```
 
-####Sample of output_file
+## Sample of output_file
 After calculating the latency, it'll create the output file `output_file.txt` . <br>
 Here's some sample of `output_file.txt` <br>
 
@@ -69,78 +70,7 @@ Size 10M
 Average Put latency:2.820047688484192
 Average Get latency:1.67938334941864
 Average Delete latency:0.3307892560958862
----------------------------------------------
-US West(Oregon) : us-west-2
-Size 1K
-Average Put latency:0.36448101997375487
-Average Get latency:0.18460440635681152
-Average Delete latency:0.2062157154083252
-Size 10K
-Average Put latency:0.41234512329101564
-Average Get latency:0.17653801441192626
-Average Delete latency:0.19135007858276368
-Size 1M
-Average Put latency:0.568362832069397
-Average Get latency:0.9497675895690918
-Average Delete latency:0.19357388019561766
-Size 10M
-Average Put latency:3.00167076587677
-Average Get latency:1.4072019577026367
-Average Delete latency:0.15935044288635253
----------------------------------------------
-Asia Pacific (Mumbai) : ap-south-1
-Size 1K
-Average Put latency:0.6419986248016357
-Average Get latency:0.34098479747772215
-Average Delete latency:0.3070537567138672
-Size 10K
-Average Put latency:0.6452900171279907
-Average Get latency:0.3354698896408081
-Average Delete latency:0.3094042778015137
-Size 1M
-Average Put latency:1.019957709312439
-Average Get latency:1.762683391571045
-Average Delete latency:0.32006173133850097
-Size 10M
-Average Put latency:50.99642922878265
-Average Get latency:2.660718488693237
-Average Delete latency:0.31752336025238037
----------------------------------------------
-Asia Pacific (Seoul) : ap-northeast-2
-Size 1K
-Average Put latency:0.04121379852294922
-Average Get latency:0.02084774971008301
-Average Delete latency:0.02301945686340332
-Size 10K
-Average Put latency:0.04593856334686279
-Average Get latency:0.021726155281066896
-Average Delete latency:0.020774006843566895
-Size 1M
-Average Put latency:0.2546741485595703
-Average Get latency:0.06010105609893799
-Average Delete latency:0.022284722328186034
-Size 10M
-Average Put latency:0.7694075107574463
-Average Get latency:0.27920725345611574
-Average Delete latency:0.02075803279876709
----------------------------------------------
-Asia Pacific (Tokyo) : ap-northeast-1
-Size 1K
-Average Put latency:0.11915185451507568
-Average Get latency:0.05700409412384033
-Average Delete latency:0.06923577785491944
-Size 10K
-Average Put latency:0.13098361492156982
-Average Get latency:0.06146240234375
-Average Delete latency:0.06829967498779296
-Size 1M
-Average Put latency:0.4334381580352783
-Average Get latency:0.22784483432769775
-Average Delete latency:0.06494462490081787
-Size 10M
-Average Put latency:2.2066476106643678
-Average Get latency:0.482458233833313
-Average Delete latency:0.07146956920623779
----------------------------------------------
 ```
+ ## How To Set Up
+ Follow `Configuration` part of [Boto3 Document](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html).<br>
  
