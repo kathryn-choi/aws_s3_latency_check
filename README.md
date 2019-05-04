@@ -3,6 +3,10 @@ AWS  S3 Latency Check Program
 
 Check S3 Latency for each region when putting, getting and deleting files. It'll test 10 times for each file and calculate the average latency for each region and file. <br>
 
+## How To Set Up
+ Follow `Configuration` part of [Boto3 Document](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html).<br>
+ Run `python3 main.py`
+ 
 ## File Size & Region List 
 ```
 file_list = ['1K', '10K', '1M', '10M']
@@ -71,6 +75,5 @@ Average Put latency:2.820047688484192
 Average Get latency:1.67938334941864
 Average Delete latency:0.3307892560958862
 ```
- ## How To Set Up
- Follow `Configuration` part of [Boto3 Document](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html).<br>
+
  
