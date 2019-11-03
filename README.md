@@ -1,4 +1,4 @@
-AWS  S3 Latency Check Program
+AWS  S3 Latency Check
 =============================
 
 Check S3 Latency for each region when putting, getting and deleting files. It'll test 10 times for each file and calculate the average latency for each region and file. <br>
